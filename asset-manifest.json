@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/interactive-form/static/css/main.46a88459.css",
+    "main.css": "/interactive-form/static/css/main.d00c7b33.css",
     "main.js": "/interactive-form/static/js/main.afb6054c.js",
-    "static/media/bg-main-desktop.png": "/interactive-form/static/media/bg-main-desktop.806e7aa7b4dbc1d78bc3.png",
-    "static/media/bg-card-back.png": "/interactive-form/static/media/bg-card-back.23f68fa3aa3d5b33dfc8.png",
-    "static/media/bg-card-front.png": "/interactive-form/static/media/bg-card-front.8153e2ca184402a8385f.png",
-    "static/media/bg-main-mobile.png": "/interactive-form/static/media/bg-main-mobile.caa4689407777a312ede.png",
+    "static/media/bg-card-back.webp": "/interactive-form/static/media/bg-card-back.51ba6877dbc5c4aba737.webp",
+    "static/media/bg-main-desktop.webp": "/interactive-form/static/media/bg-main-desktop.02ce2281e540513d3951.webp",
+    "static/media/bg-card-front.webp": "/interactive-form/static/media/bg-card-front.4b46d006c25eb216f994.webp",
+    "static/media/bg-main-mobile.webp": "/interactive-form/static/media/bg-main-mobile.35d728093fc76db71458.webp",
+    "static/media/done.webp": "/interactive-form/static/media/done.d56aa445356d08e2607a.webp",
     "index.html": "/interactive-form/index.html",
-    "main.46a88459.css.map": "/interactive-form/static/css/main.46a88459.css.map",
+    "main.d00c7b33.css.map": "/interactive-form/static/css/main.d00c7b33.css.map",
     "main.afb6054c.js.map": "/interactive-form/static/js/main.afb6054c.js.map"
   },
   "entrypoints": [
-    "static/css/main.46a88459.css",
+    "static/css/main.d00c7b33.css",
     "static/js/main.afb6054c.js"
   ]
 }
