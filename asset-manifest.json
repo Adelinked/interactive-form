@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/interactive-form/static/css/main.8e4140d3.css",
-    "main.js": "/interactive-form/static/js/main.c70ef363.js",
+    "main.css": "/interactive-form/static/css/main.46a88459.css",
+    "main.js": "/interactive-form/static/js/main.afb6054c.js",
     "static/media/bg-main-desktop.png": "/interactive-form/static/media/bg-main-desktop.806e7aa7b4dbc1d78bc3.png",
     "static/media/bg-card-back.png": "/interactive-form/static/media/bg-card-back.23f68fa3aa3d5b33dfc8.png",
     "static/media/bg-card-front.png": "/interactive-form/static/media/bg-card-front.8153e2ca184402a8385f.png",
     "static/media/bg-main-mobile.png": "/interactive-form/static/media/bg-main-mobile.caa4689407777a312ede.png",
     "index.html": "/interactive-form/index.html",
-    "main.8e4140d3.css.map": "/interactive-form/static/css/main.8e4140d3.css.map",
-    "main.c70ef363.js.map": "/interactive-form/static/js/main.c70ef363.js.map"
+    "main.46a88459.css.map": "/interactive-form/static/css/main.46a88459.css.map",
+    "main.afb6054c.js.map": "/interactive-form/static/js/main.afb6054c.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e4140d3.css",
-    "static/js/main.c70ef363.js"
+    "static/css/main.46a88459.css",
+    "static/js/main.afb6054c.js"
   ]
 }
