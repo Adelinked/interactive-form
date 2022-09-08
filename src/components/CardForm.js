@@ -21,16 +21,6 @@ const CardForm = ({ formValues, setFormValues, initialForm }) => {
 
   useEffect(() => {
     formValidate();
-    /*Object.keys(formValues).forEach((i) => {
-      const element = document.getElementById(i);
-      if (errors[i]) {
-        element.classList.add("inputErrorClass");
-        element.classList.remove("inputClass");
-      } else {
-        element.classList.remove("inputErrorClass");
-        element.classList.add("inputClass");
-      }
-    });*/
   }, [formValues, touched]);
 
   const handleOnBLur = (e) => {
@@ -128,7 +118,6 @@ const CardForm = ({ formValues, setFormValues, initialForm }) => {
 
   useEffect(() => {
     document.getElementById("cardHolderName").focus();
-    //formValidate();
   }, []);
   return (
     <>
