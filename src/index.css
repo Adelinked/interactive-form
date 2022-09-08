@@ -40,7 +40,7 @@ body {
 }
 .purpuleContainer {
   width: 30%;
-  background-image: url("../public/images/bg-main-desktop.png");
+  background-image: url("../public/images/bg-main-desktop.webp");
   position: relative;
 }
 .purpleBgImg {
@@ -154,7 +154,7 @@ button:disabled {
 }
 
 .frontCardPreview {
-  background-image: url("../public/images/bg-card-front.png");
+  background-image: url("../public/images/bg-card-front.webp");
   background-size: 100%;
   width: 401px;
   height: 220px;
@@ -182,7 +182,7 @@ button:disabled {
 }
 
 .backCardPreview {
-  background-image: url("../public/images/bg-card-back.png");
+  background-image: url("../public/images/bg-card-back.webp");
   background-size: 100%;
   width: 401px;
   height: 220px;
@@ -228,7 +228,7 @@ button:disabled {
 .doneDiv {
   width: 80px;
   height: 81px;
-  background-image: url("../public/images/done.png");
+  background-image: url("../public/images/done.webp");
   margin-bottom: 20px;
 }
 .thanks {
@@ -319,7 +319,7 @@ button:disabled {
   .purpuleContainer {
     width: 100%;
     height: 180px;
-    background-image: url("../public/images/bg-main-mobile.png");
+    background-image: url("../public/images/bg-main-mobile.webp");
   }
   .whiteContainer {
     width: 100%;
