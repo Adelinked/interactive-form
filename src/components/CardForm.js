@@ -134,8 +134,7 @@ const CardForm = ({ formValues, setFormValues, initialForm }) => {
               value={formValues.cardHolderName}
               onChange={handleChange}
               onBlur={handleOnBLur}
-              onFocus={handleOnBLur}
-              required={formValues.cardHolderName.length === 0}
+              required={true}
               placeholder="e.g. Jane Appleseed"
               maxLength={24}
             />
@@ -152,9 +151,8 @@ const CardForm = ({ formValues, setFormValues, initialForm }) => {
               value={formValues.cardNumber}
               onChange={handleChange}
               onBlur={handleOnBLur}
-              required={formValues?.cardNumber?.length === 0}
+              required={true}
               placeholder="e.g. 1234 5678 9123 0000"
-              pattern="\d{4,}*"
               maxLength={19}
             />
             <div className="errorDiv">{errors["cardNumber"]}</div>
@@ -171,7 +169,7 @@ const CardForm = ({ formValues, setFormValues, initialForm }) => {
                     value={formValues.expDateMonth}
                     onChange={handleChange}
                     onBlur={handleOnBLur}
-                    required={formValues?.expDateMonth?.length === 0}
+                    required={true}
                     placeholder="MM"
                     maxLength={2}
                     size={2}
@@ -186,7 +184,7 @@ const CardForm = ({ formValues, setFormValues, initialForm }) => {
                     value={formValues.expDateYear}
                     onChange={handleChange}
                     onBlur={handleOnBLur}
-                    required={formValues?.expDateYear?.length === 0}
+                    required={true}
                     placeholder="YY"
                     maxLength={2}
                     size={2}
@@ -205,7 +203,7 @@ const CardForm = ({ formValues, setFormValues, initialForm }) => {
                   value={formValues.cvc}
                   onChange={handleChange}
                   onBlur={handleOnBLur}
-                  required={formValues?.cvc?.length === 0}
+                  required={true}
                   placeholder="e.g. 123"
                   maxLength={3}
                   size={3}
