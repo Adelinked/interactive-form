@@ -30,15 +30,15 @@ Users should be able to:
 
 ### Screenshots
 
-![](./https://i.postimg.cc/5NzPwqPT/Screenshot-2.png)
-![](./https://i.postimg.cc/4N8S4NSN/Screenshot-1.png)
-![](./https://i.postimg.cc/0NHtxtWW/Screenshot-3.png)
-![](./https://i.postimg.cc/nLvzf5hZ/Screenshot-4.png)
+![](https://i.postimg.cc/5NzPwqPT/Screenshot-2.png)
+![](https://i.postimg.cc/4N8S4NSN/Screenshot-1.png)
+![](https://i.postimg.cc/0NHtxtWW/Screenshot-3.png)
+![](https://i.postimg.cc/nLvzf5hZ/Screenshot-4.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Adelinked/interactive-form)
-- Live Site URL: [Add live site URL here](https://adelinked.github.io/interactive-form/)
+- Solution URL: [solution URL here](https://github.com/Adelinked/interactive-form)
+- Live Site URL: [live site URL here](https://adelinked.github.io/interactive-form/)
 
 ## My process
 
