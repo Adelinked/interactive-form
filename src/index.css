@@ -1,13 +1,366 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+:root {
+  --color-active-input: linear-gradient(
+    90deg,
+    hsl(249, 99%, 64%),
+    hsl(278, 94%, 30%)
+  );
+  --color-active-input-start: hsl(249, 99%, 64%);
+  --color-active-input-end: hsl(278, 94%, 30%);
+  --color-input-error: hsl(0, 100%, 66%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-lightGrayishViolet: hsl(270, 3%, 87%);
+  --color-darkGrayishViolet: hsl(279, 6%, 55%);
+  --color-veryDarkViolet: hsl(278, 68%, 11%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-style: normal;
+  background-color: var(--color-white);
+  color: var(--color-veryDarkViolet);
+
+  letter-spacing: 1px;
+}
+.container {
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+}
+.whiteContainer {
+  width: 70%;
+}
+.purpuleContainer {
+  width: 30%;
+  background-image: url("../public/images/bg-main-desktop.png");
+  position: relative;
+}
+.purpleBgImg {
+  display: bloc;
+  width: 100%;
+  object-fit: cover;
+}
+.form {
+  margin: 100px auto;
+
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 10px;
+  min-height: 60vh;
+}
+
+.inputErrorClass {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-veryDarkViolet);
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 5px;
+  outline: none;
+  border: 1px solid var(--color-input-error);
+}
+
+input::placeholder {
+  color: var(--color-darkGrayishViolet);
+}
+.inputClass {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-veryDarkViolet);
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid var(--color-white);
+  border-top: 1px solid var(--color-lightGrayishViolet);
+  outline: none;
+  position: relative;
+}
+
+.inputClass:focus,
+.inputClass:hover,
+.inputClass:active {
+  cursor: pointer;
+  border: double 1px transparent;
+  /* first gradient is for card background, second for border background */
+  background-image: linear-gradient(white, white), var(--color-active-input);
+  background-clip: padding-box, border-box;
+  background-origin: border-box;
+}
+
+label {
+  font-family: "Space Grotesk", sans-serif;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+button {
+  background-color: var(--color-veryDarkViolet);
+  color: var(--color-white);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 18px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+}
+button:disabled {
+  color: var(--color-darkGrayishViolet);
+}
+.dateCvcContainer {
+  display: flex;
+  align-items: center;
+}
+.dateCvcContainer input {
+  margin-right: 10px;
+}
+.dateContainer {
+  display: flex;
+  flex-direction: column;
+}
+.cvcContainer {
+  display: flex;
+  flex-direction: column;
+}
+.cvcContainer input {
+  margin-left: 10px;
+}
+.cvcContainer label {
+  margin-left: 10px;
+}
+.errorDiv {
+  height: 20px;
+  color: var(--color-input-error);
+}
+
+.ok-field {
+  border: 1px solid hsl(279, 6%, 55%);
+  outline: 1px solid hsl(279, 6%, 55%);
+}
+
+.error-field {
+  border: 1px solid red;
+  outline: 1px solid red;
+}
+
+.frontCardPreview {
+  background-image: url("../public/images/bg-card-front.png");
+  background-size: 100%;
+  width: 401px;
+  height: 220px;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+.fullCircle {
+  margin-top: 25px;
+  margin-left: 25px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  position: relative;
+}
+.emptyCircle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 30%;
+  left: 50px;
+  border: 1px solid var(--color-white);
+}
+
+.backCardPreview {
+  background-image: url("../public/images/bg-card-back.png");
+  background-size: 100%;
+  width: 401px;
+  height: 220px;
+  position: absolute;
+  top: 300px;
+  left: 200px;
+}
+.backCardCvc {
+  color: var(--color-white);
+  font-size: 14px;
+  margin-top: 100px;
+  margin-left: 320px;
+}
+.frontCardPreview div {
+  color: var(--color-lightGrayishViolet);
+}
+.frontCardNumber {
+  margin-top: 65px;
+  margin-left: 25px;
+  font-size: 22px;
+}
+.fontCardNameDateContainer {
+  margin-top: 20px;
+  margin-right: 25px;
+  margin-left: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+.frontCardHolderName {
+}
+.frontCardDate {
+}
+
+.doneComponentContainer {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.doneDiv {
+  width: 80px;
+  height: 81px;
+  background-image: url("../public/images/done.png");
+  margin-bottom: 20px;
+}
+.thanks {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.thanksComment {
+  font-size: 15px;
+  color: var(--color-darkGrayishViolet);
+  margin-bottom: 20px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (max-width: 1270px) {
+  .frontCardPreview {
+    left: 80px;
+  }
+  .backCardPreview {
+    left: 100px;
+  }
+  .frontCardNumber {
+    margin-top: 50px;
+  }
+  .fontCardNameDateContainer {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .frontCardPreview {
+    width: 300px;
+    height: 164px;
+  }
+  .backCardPreview {
+    width: 300px;
+    height: 164px;
+    top: 250px;
+  }
+  .backCardCvc {
+    margin-top: 72px;
+    margin-left: 240px;
+  }
+  .frontCardNumber {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  .fontCardNameDateContainer {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 950px) {
+  .frontCardPreview {
+    width: 260px;
+    height: 142px;
+    left: 5px;
+  }
+  .backCardPreview {
+    width: 260px;
+    height: 142px;
+    top: 220px;
+    left: 10px;
+  }
+  .backCardCvc {
+    margin-top: 63px;
+    margin-left: 200px;
+  }
+  .frontCardNumber {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+  .fontCardNameDateContainer {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 760px) {
+  .container {
+    flex-direction: column;
+    margin: 10px;
+  }
+  .purpuleContainer {
+    width: 100%;
+    height: 180px;
+    background-image: url("../public/images/bg-main-mobile.png");
+  }
+  .whiteContainer {
+    width: 100%;
+  }
+  .form {
+    margin-top: 100px;
+    margin-bottom: 5px;
+    min-height: 0;
+  }
+
+  .backCardPreview {
+    width: 286px;
+    height: 156px;
+    top: 30px;
+    left: 60px;
+  }
+  .frontCardPreview {
+    width: 286px;
+    height: 156px;
+    top: 119px;
+    left: 30px;
+  }
+
+  .backCardCvc {
+    font-size: 12px;
+    margin-top: 70px;
+    margin-left: 220px;
+  }
+  .frontCardNumber {
+    margin-top: 25px;
+    margin-left: 25px;
+    font-size: 18px;
+  }
+
+  .fontCardNameDateContainer {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    margin: 0;
+  }
 }

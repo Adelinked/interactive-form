@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import CardForm from "./components/CardForm";
+import FrontCardPreview from "./components/FrontCardPreview";
+import BackCardPreview from "./components/BackCardPreview";
 
-function App() {
+const initialForm = {
+  cardHolderName: "",
+  cardNumber: "",
+  expDateMonth: "",
+  expDateYear: "",
+  cvc: "",
+};
+
+export default function App() {
+  const [formValues, setFormValues] = useState(initialForm);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <div className="purpuleContainer">
+          <BackCardPreview cvc={formValues.cvc} />
+          <FrontCardPreview {...formValues} />
+        </div>
+        <div className="whiteContainer">
+          <CardForm
+            formValues={formValues}
+            setFormValues={setFormValues}
+            initialForm={initialForm}
+          />
+        </div>
+      </div>
     </div>
   );
 }
-
-export default App;
